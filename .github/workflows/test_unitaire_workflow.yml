@@ -1,0 +1,21 @@
+name: Tests unitaires de l'app
+
+on:
+  push
+
+jobs:
+  Tests-app:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: Récupération du repo
+        uses: actions/checkout@v3
+      - name: Installation de nodeJS
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+      - name: Installation des dépendances
+        run: npm install
+      - name: Exécution des tests unitaires$
+        run: npm tests
+      - name: Exécution du code coverage
+        run: npm run cover
