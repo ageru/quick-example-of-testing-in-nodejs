@@ -12,19 +12,19 @@ jobs:
     steps: 
       - name: Récupération du repo
         uses: actions/checkout@v3
-      - name: j'effectue des tests
-        id: test
-        run: exit 1
-      - name: Je créée un ticket
-        if: failure()
-        uses: actions-ecosystem/action-create-issue@v1
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          title: Echec test unitaire
-          body: |
-            ## A faire au plus vite
-            - [ ] Revoir le code
-            - [ ] Revoir le process 
+      # - name: j'effectue des tests
+      #   id: test
+      #   run: exit 1
+      # - name: Je créée un ticket
+      #   if: failure()
+      #   uses: actions-ecosystem/action-create-issue@v1
+      #   with:
+      #     github_token: ${{ secrets.GITHUB_TOKEN }}
+      #     title: Echec test unitaire
+      #     body: |
+      #       ## A faire au plus vite
+      #       - [ ] Revoir le code
+      #       - [ ] Revoir le process 
 
   Build-app:
     runs-on: ubuntu-latest
