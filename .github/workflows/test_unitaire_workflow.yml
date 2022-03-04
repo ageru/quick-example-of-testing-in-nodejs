@@ -21,6 +21,6 @@ jobs:
         run: npm run cover
       - name: Récupération du rapport
         uses: actions/upload-artifact@v3
-          with:
-            name: reports
-            path: ./reports/**
+        with:
+          name: reports
+          path: ./reports/**
