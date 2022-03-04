@@ -16,6 +16,6 @@ jobs:
       - name: Installation des dépendances
         run: npm install
       - name: Exécution des tests unitaires$
-        run: npm tests
+        run: npm test
       - name: Exécution du code coverage
         run: npm run cover
