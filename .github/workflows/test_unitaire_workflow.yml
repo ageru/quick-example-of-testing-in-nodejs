@@ -17,7 +17,7 @@ jobs:
         uses: actions-ecosystem/action-create-issue@v1
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          title: ${{ steps.test.name }}
+          title: Echec test unitaire
           body: |
             ## A faire au plus vite
             - [ ] Revoir le code
