@@ -16,6 +16,7 @@ jobs:
         if: failure()
         uses: actions-ecosystem/action-create-issue@v1
         with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           title: ${{ steps.test.name }}
           body: |
             ## A faire au plus vite
