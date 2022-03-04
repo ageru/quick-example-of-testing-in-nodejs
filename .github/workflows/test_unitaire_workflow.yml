@@ -10,7 +10,7 @@ jobs:
       - name: Récupération du repo
         uses: actions/checkout@v3
       - name: Installation de nodeJS
-      - uses: actions/setup-node@v2
+        uses: actions/setup-node@v2
         with:
           node-version: '14'
       - name: Installation des dépendances
