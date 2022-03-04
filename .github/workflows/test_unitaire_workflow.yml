@@ -6,9 +6,6 @@ on:
 jobs:
   Tests-app:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [8, 10, 12, 14, 16]
     steps: 
       - name: Récupération du repo
         uses: actions/checkout@v3
