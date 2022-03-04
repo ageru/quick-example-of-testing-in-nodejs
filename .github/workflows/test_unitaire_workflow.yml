@@ -15,7 +15,7 @@ jobs:
       # - name: j'effectue des tests
       #   id: test
       #   run: exit 1
-      # - name: Je créée un ticket
+      # - name: Je créée un ticket en cas d'échec
       #   if: failure()
       #   uses: actions-ecosystem/action-create-issue@v1
       #   with:
