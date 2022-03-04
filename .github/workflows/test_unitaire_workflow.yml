@@ -12,23 +12,6 @@ jobs:
     steps: 
       - name: Récupération du repo
         uses: actions/checkout@v3
-      # - name: Installation de nodeJS
-      #   uses: actions/setup-node@v2
-      #   with:
-      #     node-version: ${{ matrix.node-version }}
-      # - name: Info sur la version testée
-      #   run: echo ${{ matrix.node-version }}
-      # - name: Installation des dépendances
-      #   run: npm install
-      # - name: Exécution des tests unitaires
-      #   run: npm test
-      # - name: Exécution du code coverage
-      #   run: npm run cover
-      # - name: Récupération du rapport
-      #   uses: actions/upload-artifact@v3
-      #   with:
-      #     name: reports
-      #     path: ./reports/**
       - name: j'effectue des tests
         id: test
         run: exit 1
